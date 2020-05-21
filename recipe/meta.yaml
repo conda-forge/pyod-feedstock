@@ -1,18 +1,18 @@
 {% set name = "pyod" %}
-{% set version = "0.7.7.1" %}
+{% set version = "0.7.9" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 22cd28595187ca54e06418522b699b80ab6eae658ac3de194c3ef85730127016
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 8ce9fe9e1ea9df52fc9c27880d8220e6022b7e83c73a31f312204a60a3fa35be
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -35,12 +35,12 @@ test:
     - pyod.utils
 
 about:
-  home: "https://github.com/yzhao062/pyod"
+  home: https://github.com/yzhao062/pyod
   license: BSD-2-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: "A Python Toolkit for Scalable Outlier Detection (Anomaly Detection)"
-  doc_url: "https://pyod.readthedocs.io"
+  summary: A Python Toolkit for Scalable Outlier Detection (Anomaly Detection)
+  doc_url: https://pyod.readthedocs.io
 
 extra:
   recipe-maintainers:
