@@ -5,7 +5,7 @@ Home: https://github.com/yzhao062/pyod
 
 Package license: BSD-2-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A Python Toolkit for Scalable Outlier Detection (Anomaly Detection)
 
