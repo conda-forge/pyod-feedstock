@@ -1,5 +1,5 @@
 {% set name = "pyod" %}
-{% set version = "0.8.1" %}
+{% set version = "0.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6c73f23cc7b24d6c38da609341175ab46786f5239ec4054b08dc3c19e63ec235
+  sha256: 4e1d298fbf510c94427faad241fff8a06da76d2d7cf2a80f1fda749a460d7fe7
 
 build:
   number: 0
@@ -23,10 +23,12 @@ requirements:
     - matplotlib-base
     - numba >=0.35
     - numpy >=1.13
+    - pandas >=0.25
     - python
     - scikit-learn >=0.19.1
     - scipy >=0.19.1
     - six
+    - statsmodels
 
 test:
   imports:
