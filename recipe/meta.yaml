@@ -22,11 +22,10 @@ requirements:
     - python >=3.5
     - joblib
     - matplotlib-base
-    - numba >=0.35
-    - numpy >=1.13
-    - pandas >=0.25
-    - scikit-learn >=0.19.1
-    - scipy >=0.19.1
+    - numba >=0.51
+    - numpy >=1.19
+    - scikit-learn >=0.20.0
+    - scipy >=1.5.1
     - six
     - statsmodels
 
