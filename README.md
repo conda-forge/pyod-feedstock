@@ -1,11 +1,11 @@
-About pyod
-==========
+About pyod-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyod-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/yzhao062/pyod
 
 Package license: BSD-2-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyod-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Python Toolkit for Scalable Outlier Detection (Anomaly Detection)
 
