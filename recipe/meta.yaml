@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: e05b7a457ac9bd8b0cc41754fdafe3aefcc1f61270f33d38f43112676d9db2b8
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python {{ python_min }}
   run:
-    - python >=3.5
+    - python >={{ python_min }}
     - joblib
     - matplotlib-base
     - numba >=0.51
@@ -30,6 +30,8 @@ requirements:
     - statsmodels
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pyod
     - pyod.models
