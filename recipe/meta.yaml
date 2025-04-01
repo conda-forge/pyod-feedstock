@@ -1,5 +1,5 @@
 {% set name = "pyod" %}
-{% set version = "2.0.2" %}
+{% set version = "2.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,27 +7,27 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e05b7a457ac9bd8b0cc41754fdafe3aefcc1f61270f33d38f43112676d9db2b8
+  sha256: 68bb7333061ecb04113e39180efc75918a077f86b349a5e927dede0d5bb4473a
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
+  build:
+    - setuptools
   host:
     - pip
     - python {{ python_min }}
   run:
     - python >={{ python_min }}
     - joblib
-    - matplotlib-base
+    - matplotlib
     - numba >=0.51
     - numpy >=1.19
-    - scikit-learn >=0.20.0
+    - scikit-learn >=0.22.0
     - scipy >=1.5.1
-    - six
-    - statsmodels
 
 test:
   requires:
