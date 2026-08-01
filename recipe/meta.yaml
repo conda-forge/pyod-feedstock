@@ -1,5 +1,5 @@
 {% set name = "pyod" %}
-{% set version = "3.6.2" %}
+{% set version = "3.6.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b6c660a0878bfab357d617ef72ea3d79cf695ed7545fa326b7ae2b520acfab83
+  sha256: 8cc0a5810b650e6ee1bb314f0fd7582ba230fdd1b949852a946c2e7d9037ae4e
 
 build:
   number: 0
