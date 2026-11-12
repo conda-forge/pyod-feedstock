@@ -1,5 +1,5 @@
 {% set name = "pyod" %}
-{% set version = "3.6.7" %}
+{% set version = "3.6.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 26e189ee93b85e6f11a4155674e77818fed3a25d96b6ae613a885b143d624e12
+  sha256: ae1f30017f9ff98cd19adf80266303f7403a2fb9a5ce338c081f99c3d9b599f0
 
 build:
   number: 0
